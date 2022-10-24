@@ -108,7 +108,7 @@ int main(int argc, char** argv) {
 	HANDLE hProc;
 	
 	if (argc < 3) {
-		printf("USAGE: AMS1-Patch.exe <PID> <PatchNumber\n");
+		printf("USAGE: AMS1-Patch.exe <PID> <PatchNumber 1-7> \n");
 		return 1;
 	}
 
