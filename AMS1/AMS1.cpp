@@ -132,7 +132,7 @@ int main(int argc, char** argv) {
 	else if (patchNum == 6)
 		AMS1patch(hProc, 0x92, "\x48\x31\xC9", 3);	// xor rcx,rcx at offset 0x92
 	else
-		AMS1patch2(hProc);
+		AMS1patch2(hProc);	// compare AMSI,D1RK
 
 
 	return 0;
