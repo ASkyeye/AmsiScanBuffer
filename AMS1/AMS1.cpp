@@ -120,17 +120,17 @@ int main(int argc, char** argv) {
 
 	int patchNum = atoi(argv[2]);
 	if (patchNum == 1)
-		AMS1patch(hProc, 0x6A, "\x48\x31\xF6", 3);	// xor rsi,rsi
+		AMS1patch(hProc, 0x6A, "\x48\x31\xF6", 3);	// xor rsi,rsi at offset 0x6A
 	else if (patchNum == 2)
-		AMS1patch(hProc, 0x6F, "\x31\xFF", 2);		// xor edi,edi	
+		AMS1patch(hProc, 0x6F, "\x31\xFF", 2);		// xor edi,edi at offset 0x6F
 	else if (patchNum == 3)
-		AMS1patch(hProc, 0x73, "\x48\x31\xED", 3);	// xor rbp,rbp
+		AMS1patch(hProc, 0x73, "\x48\x31\xED", 3);	// xor rbp,rbp at offset 0x73
 	else if (patchNum == 4)
-		AMS1patch(hProc, 0x78, "\x48\x31\xDB", 3);	// xor rbx,rbx
+		AMS1patch(hProc, 0x78, "\x48\x31\xDB", 3);	// xor rbx,rbx at offset 0x78
 	else if (patchNum == 5)
-		AMS1patch(hProc, 0x89, "\x48\x31\xC0", 3);	// xor rax,rax
+		AMS1patch(hProc, 0x89, "\x48\x31\xC0", 3);	// xor rax,rax at offset 0x89
 	else if (patchNum == 6)
-		AMS1patch(hProc, 0x92, "\x48\x31\xC9", 3);	// xor rcx,rcx
+		AMS1patch(hProc, 0x92, "\x48\x31\xC9", 3);	// xor rcx,rcx at offset 0x92
 	else
 		AMS1patch2(hProc);
 
